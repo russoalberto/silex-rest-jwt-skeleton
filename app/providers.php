@@ -22,7 +22,7 @@ $app->register(new DoctrineServiceProvider(), array(
 $app->register(new HttpCacheServiceProvider(), array('http_cache.cache_dir' => __DIR__.'/../app/cache'));
 
 $app->register(new MonologServiceProvider(), array(
-    'monolog.logfile' => __DIR__.'/../app/logs/'.$now->format('Y-m-d').'.log',
+    'monolog.logfile' => __DIR__.'/../app/logs/'.$app['environment'].'/'.$now->format('Y-m-d').'.log',
     'monolog.level' => $app['log.level'],
     'monolog.name' => 'application',
 ));
