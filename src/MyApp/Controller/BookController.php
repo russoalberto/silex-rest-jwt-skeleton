@@ -2,35 +2,80 @@
 
 namespace MyApp\Controller;
 
+use Symfony\Component\HttpFoundation\JsonResponse;
+
 class BookController
 {
     public function index()
     {
-        return 'Books index';
+        $message = 'Books index';
+
+        return new JsonResponse(
+            array(
+                'statusCode' => 200,
+                'message' => $message
+            )
+        );
     }
 
     public function edit($id)
     {
-        return 'Books edit' . $id;
+        $message = 'Books edit' . $id;
+
+        return new JsonResponse(
+            array(
+                'statusCode' => 200,
+                'message' => $message
+            )
+        );
+
     }
 
     public function show($id)
     {
-        return 'Books show ' . $id;
+        $message = 'Books show ' . $id;
+
+        return new JsonResponse(
+            array(
+                'statusCode' => 200,
+                'message' => $message
+            )
+        );
     }
 
     public function store()
     {
-        return 'Books store';
+        $message = 'Books store';
+
+        return new JsonResponse(
+            array(
+                'statusCode' => 200,
+                'message' => $message
+            )
+        );
     }
 
     public function update($id)
     {
-        return 'Books update' . $id;
+        $message = 'Books update' . $id;
+
+        return new JsonResponse(
+            array(
+                'statusCode' => 200,
+                'message' => $message
+            )
+        );
     }
 
     public function destroy($id)
     {
-        return 'Books destroy' . $id;
+        $message = 'Books destroy' . $id;
+
+        return new JsonResponse(
+            array(
+                'statusCode' => 200,
+                'message' => $message
+            )
+        );
     }
 }
