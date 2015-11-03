@@ -1,7 +1,7 @@
 {
     "name": "valix/silex-rest-jwt-skeleton",
 	"type": "library",
-	"description": "A skeleton to create API Rest with Silex with JWT authorization",
+	"description": "A skeleton to create API Rest with Silex and JWT authorization",
 	"keywords": [
 		"framework", "silex", "rest", "api","jwt"
 	],
