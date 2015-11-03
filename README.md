@@ -1,4 +1,4 @@
-# silex-rest-skeleton
+# silex-rest-jwt-skeleton
 A skeleton to create API Rest with Silex and JWT authorization
 
 Inspired by:
