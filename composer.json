@@ -9,7 +9,7 @@
 	"license": "MIT",
 	"authors": [{
 		"name": "Alberto Russo",
-		"email": "info@albertorusso.net"
+		"email": "me@albertorusso.net"
 	}],
     "require": {
         "php": ">=5.3.0",
