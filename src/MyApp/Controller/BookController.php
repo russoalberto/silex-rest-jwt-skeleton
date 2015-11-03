@@ -11,9 +11,7 @@ class BookController
         $message = 'Books index';
 
         return new JsonResponse(
-            array(
-                'message' => $message
-            ),
+            array('message' => $message),
             200
         );
     }
@@ -23,9 +21,7 @@ class BookController
         $message = 'Books edit' . $id;
 
         return new JsonResponse(
-            array(
-                'message' => $message
-            ),
+            array('message' => $message),
             200
         );
 
@@ -36,9 +32,7 @@ class BookController
         $message = 'Books show ' . $id;
 
         return new JsonResponse(
-            array(
-                'message' => $message
-            ),
+            array('message' => $message),
             200
         );
     }
@@ -48,9 +42,7 @@ class BookController
         $message = 'Books store';
 
         return new JsonResponse(
-            array(
-                'message' => $message
-            ),
+            array('message' => $message),
             200
         );
     }
@@ -60,9 +52,7 @@ class BookController
         $message = 'Books update' . $id;
 
         return new JsonResponse(
-            array(
-                'message' => $message
-            ),
+            array('message' => $message),
             200
         );
     }
@@ -72,9 +62,7 @@ class BookController
         $message = 'Books destroy' . $id;
 
         return new JsonResponse(
-            array(
-                'message' => $message
-            ),
+            array('message' => $message),
             200
         );
     }

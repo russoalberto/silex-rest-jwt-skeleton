@@ -20,9 +20,7 @@ class Book implements ControllerProviderInterface
             if ($rawHeader) {
                 if (strpos($rawHeader, 'Bearer ') === false) {
                     return new JsonResponse(
-                        array(
-                            'message' => 'Unauthorized'
-                        ),
+                        array('message' => 'Unauthorized'),
                         401
                     );
                 }
@@ -34,17 +32,13 @@ class Book implements ControllerProviderInterface
                     $token = JWT::decode($jwt, $secretKey, [$app['algorithm']]);
                 } catch (Exception $e) {
                     return new JsonResponse(
-                        array(
-                            'message' => 'Unauthorized'
-                        ),
+                        array('message' => 'Unauthorized'),
                         401
                     );
                 }
             } else {
                 return new JsonResponse(
-                    array(
-                        'message' => 'Bad Request'
-                    ),
+                    array('message' => 'Bad Request'),
                     400
                 );
             }

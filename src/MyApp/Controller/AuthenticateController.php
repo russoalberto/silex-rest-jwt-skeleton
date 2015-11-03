@@ -50,24 +50,18 @@ class AuthenticateController
                 );
 
                 return new JsonResponse(
-                    array(
-                        'token' => $jwt
-                    ),
+                    array('token' => $jwt),
                     200
                 );
             } else {
                 return new JsonResponse(
-                    array(
-                        'message' => 'Failed to Authenticate'
-                    ),
+                    array('message' => 'Failed to Authenticate'),
                     403
                 );
             }
         } else {
             return new JsonResponse(
-                array(
-                    'message' => 'Failed to Authenticate'
-                ),
+                array('message' => 'Failed to Authenticate'),
                 403
             );
         }
