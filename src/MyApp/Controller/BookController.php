@@ -12,9 +12,9 @@ class BookController
 
         return new JsonResponse(
             array(
-                'statusCode' => 200,
                 'message' => $message
-            )
+            ),
+            200
         );
     }
 
@@ -24,9 +24,9 @@ class BookController
 
         return new JsonResponse(
             array(
-                'statusCode' => 200,
                 'message' => $message
-            )
+            ),
+            200
         );
 
     }
@@ -37,9 +37,9 @@ class BookController
 
         return new JsonResponse(
             array(
-                'statusCode' => 200,
                 'message' => $message
-            )
+            ),
+            200
         );
     }
 
@@ -49,9 +49,9 @@ class BookController
 
         return new JsonResponse(
             array(
-                'statusCode' => 200,
                 'message' => $message
-            )
+            ),
+            200
         );
     }
 
@@ -61,9 +61,9 @@ class BookController
 
         return new JsonResponse(
             array(
-                'statusCode' => 200,
                 'message' => $message
-            )
+            ),
+            200
         );
     }
 
@@ -73,9 +73,9 @@ class BookController
 
         return new JsonResponse(
             array(
-                'statusCode' => 200,
                 'message' => $message
-            )
+            ),
+            200
         );
     }
 }
