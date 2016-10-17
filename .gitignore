@@ -1,5 +1,8 @@
 /app/cache/*
 !app/cache/.gitkeep
-/app/logs/*
-!app/logs/.gitkeep
+app/logs/dev/*
+!app/logs/dev/.gitkeep
+app/logs/prod/*
+!app/logs/prod/.gitkeep
 /vendor/
+/web/provaJWT.html

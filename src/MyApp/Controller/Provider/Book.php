@@ -3,7 +3,7 @@
 namespace MyApp\Controller\Provider;
 
 use Silex\Application;
-use Silex\ControllerProviderInterface;
+use Silex\Api\ControllerProviderInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Firebase\JWT\JWT;
